@@ -48,14 +48,13 @@ Training uses a CUDA GPU. Inference supports CPU and CUDA. The pretrained DenseN
 
 ```text
 DAHCFormer/
-├── GIFNet_model.py                 # Shared backbone, HCFGM, and decoders
+├── model.py                 # Shared backbone, HCFGM, and decoders
 ├── GIFNetDataset.py                # Same-scene IVIF / synthetic MFIF loader
 ├── args.py                        # Architecture and default training settings
 ├── train.py                       # Alternating training with EMA and EP
 ├── test.py                        # Grayscale and color pair inference
 ├── evaluate_fusion_metrics.py      # EI, VIF, SCD, and AG evaluation
 ├── utils.py                       # Image and loss utilities
-├── testMat.py                     # Training-loss plotting
 ├── pytorch_msssim/                 # Local SSIM / MS-SSIM implementation
 ├── tools/
 │   ├── checkpoint_health.py        # Checkpoint output diagnostics
